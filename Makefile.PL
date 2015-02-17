@@ -64,8 +64,8 @@ if ($ExtUtils::MakeMaker::VERSION >= 6.46) {
         resources => {
             repository => {
                 type    => 'git',
-                url     => 'https://github.com/justnoxx/system-process',
-                web     => 'https://github.com/justnoxx/system-process.git',
+                url     => 'https://github.com/justnoxx/test-virtualmodule',
+                web     => 'https://github.com/justnoxx/test-virtualmodule.git',
             },
         },
     };
