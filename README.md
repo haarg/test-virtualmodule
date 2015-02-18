@@ -1,6 +1,9 @@
 # Test::VirtualModule
 
-Perl virtual modules mechanism for unit testing.
+Perl virtual modules mechanism for unit testing. For example, you have some perl module with complex dependencies,
+which can't be satisfied without a lot of manipulation.
+But for your unit tests you need to use this module.
+So, you can do that:
 
 See example:
 
