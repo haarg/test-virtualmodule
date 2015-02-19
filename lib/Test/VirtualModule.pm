@@ -38,7 +38,7 @@ use strict;
 use warnings;
 use Carp;
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 sub import {
     my ($caller, @module_list) = @_;
@@ -47,10 +47,11 @@ sub import {
     return unless %hash;
     unshift @INC, sub {
         my ($self, $package) = @_;
+
         $package =~ s|/|::|gs;
         $package =~ s|\.pm||s;
         return unless $hash{$package};
-        my $text = qq|package $package;1;|;
+        my $text = qq|package $package;use strict;1;|;
         open my $fh, '<', \$text;
         return $fh;
     };
