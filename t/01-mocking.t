@@ -4,7 +4,7 @@ use BlahBlahBlah;
 
 use Test::More tests => 3;
 
-use_ok('BlahBlahBlah', 'Mocked module BlahBlahBlah loaded');
+use_ok('BlahBlahBlah');
 
 Test::VirtualModule->mock_sub('BlahBlahBlah',
     new => sub {
